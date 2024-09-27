@@ -14,12 +14,21 @@ const config: Config = {
         purple: "#6144F3",
         green: "#48FFB0",
         white: "#f8f8f8",
-        black: '#000000',
+        black: "#000000",
       },
       fontFamily: {
-        header: 'Montserrat',
-        text: 'Roboto',
-      }
+        header: "Montserrat",
+        text: "Roboto",
+      },
+      keyframes: {
+        fade: {
+          "0%": { opacity: "0.2" },
+          "100%": { opacity: "1" },
+        },
+      },
+      animation: {
+        menu: "fade .7s ease-in-out",
+      },
     },
   },
   plugins: [],
