@@ -16,6 +16,10 @@ const config: Config = {
         white: "#f8f8f8",
         black: '#000000',
       },
+      fontFamily: {
+        header: 'Montserrat',
+        text: 'Roboto',
+      }
     },
   },
   plugins: [],

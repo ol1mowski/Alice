@@ -1,9 +1,11 @@
-import React from 'react'
+import Header from "./Components/Header/Header";
 
 function index() {
   return (
-    <h1 className='text-purple'>Alice</h1>
-  )
+    <>
+      <Header />
+    </>
+  );
 }
 
-export default index
+export default index;
