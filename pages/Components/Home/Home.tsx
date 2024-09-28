@@ -2,8 +2,8 @@ import Image from "next/image";
 
 function Home() {
   return (
-    <main className="container flex flex-col h-screen p-5">
-        <div className="absolute shadow-custom-big bg-transparent top-1/3 right-32 bg-custom-gradient animate-menu">
+    <main className="container flex flex-col h-full p-5">
+        <div className="absolute shadow-custom-big bg-transparent top-1/3 right-32 bg-custom-gradient">
             
         </div>
       <section className="hidden">
@@ -17,27 +17,27 @@ function Home() {
         />
       </section>
       <section className="h-3/4">
-        <div className="h-1/4 mt-32 flex justify-between">
-          <div className="flex flex-col">
+        <div className="h-full mt-32 flex justify-between">
+          <div className="flex flex-col min-w-32">
             <span className="font-bold text-purple text-4xl">+300</span>
             <span className="text-l">
               Atywnych <br /> Użytkowników
             </span>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col min-w-32">
             <span className="font-bold text-purple text-4xl">+900</span>
             <span className="text-l">
               Zapytań <br /> Dziennie
             </span>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col min-w-32">
             <span className="font-bold text-purple text-4xl">+40</span>
             <span className="text-l">
               Pozytywnych <br /> Opinii
             </span>
           </div>
         </div>
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-10 mt-20">
           <div className="flex items-end gap-5">
             <span className="text-3xl text-purple">Sprawdź teraz</span>
             <Image
@@ -55,7 +55,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="flex justify-center items-center animate-bounce mt-5 h-auto">
+      <section className="flex justify-center items-center animate-bounce mt-14 h-auto">
         <Image
           src={
             "https://res.cloudinary.com/dbbuav0rj/image/upload/v1727450427/AliceIcons/scroll_jjgqji.svg"
