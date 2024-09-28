@@ -37,6 +37,12 @@ const config: Config = {
       animation: {
         menu: "fade .7s ease-in-out",
       },
+      maxHeight: {
+        mainImage: '50rem',
+      },
+      padding: {
+        main: '5rem 120px'
+      }
     },
   },
   plugins: [],

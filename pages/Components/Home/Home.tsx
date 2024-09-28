@@ -2,42 +2,50 @@ import Image from "next/image";
 
 function Home() {
   return (
-    <main className="container flex flex-col h-full p-5">
+    <main className="flex w-full flex-col h-full p-5 lg:flex-row justify-center xl:p-main">
         <div className="absolute shadow-custom-big bg-transparent top-1/3 right-32 bg-custom-gradient">
             
         </div>
-      <section className="hidden">
+      <section className="hidden lg:flex lg:w-2/3">
         <Image
           src={
             "https://res.cloudinary.com/dbbuav0rj/image/upload/v1727523443/AliceImage/aliceMainImage_jzkp7e.webp"
           }
           alt="alice main image"
-          width={500}
-          height={500}
+          width={300}
+          height={300}
+          className="w-11/12 h-11/12 max-w-2xl lg:max-h-mainImage"
         />
       </section>
-      <section className="h-3/4">
-        <div className="h-full mt-32 flex justify-between max-w-xl m-auto">
+
+
+      <section className="h-3/4 lg:flex lg:flex-col lg:w-1/3">
+
+
+        <section className="h-full mt-32 flex justify-between max-w-xl m-auto lg:gap-5 lg:mt-64">
           <div className="flex flex-col min-w-32">
             <span className="font-bold text-purple text-4xl">+300</span>
-            <span className="text-l sm:text-2xl sm:font-extralight">
+            <span className="text-l sm:text-2xl sm:font-extralight lg:text-xl">
               Atywnych <br /> Użytkowników
             </span>
           </div>
           <div className="flex flex-col min-w-32">
             <span className="font-bold text-purple text-4xl">+900</span>
-            <span className="text-l sm:text-2xl sm:font-extralight">
+            <span className="text-l sm:text-2xl sm:font-extralight lg:text-xl">
               Zapytań <br /> Dziennie
             </span>
           </div>
           <div className="flex flex-col min-w-32">
             <span className="font-bold text-purple text-4xl">+40</span>
-            <span className="text-l sm:text-2xl sm:font-extralight">
+            <span className="text-l sm:text-2xl sm:font-extralight lg:text-xl">
               Pozytywnych <br /> Opinii
             </span>
           </div>
-        </div>
-        <div className="flex flex-col gap-10 mt-20">
+        </section>
+
+
+
+        <div className="flex flex-col gap-10 mt-20 ">
           <div className="flex items-end gap-5">
             <span className="text-3xl text-purple">Sprawdź teraz</span>
             <Image
@@ -49,13 +57,15 @@ function Home() {
               height={40}
             />
           </div>
-          <h1 className="text-5xl leading-tight font-semibold md:text-7xl">
+          <h1 className="text-5xl leading-tight font-semibold md:text-7xl lg:text-6xl">
             Poznaj nasze najnowsze rozwiązanie <span className="text-purple">AI</span>
           </h1>
         </div>
       </section>
 
-      <section className="flex justify-center items-center animate-bounce mt-14 h-auto sm:mt-20">
+
+
+      <section className="flex justify-center items-center animate-bounce mt-14 h-auto sm:mt-20 lg:hidden">
         <Image
           src={
             "https://res.cloudinary.com/dbbuav0rj/image/upload/v1727450427/AliceIcons/scroll_jjgqji.svg"
