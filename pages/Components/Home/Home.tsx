@@ -17,22 +17,22 @@ function Home() {
         />
       </section>
       <section className="h-3/4">
-        <div className="h-full mt-32 flex justify-between">
+        <div className="h-full mt-32 flex justify-between max-w-xl m-auto">
           <div className="flex flex-col min-w-32">
             <span className="font-bold text-purple text-4xl">+300</span>
-            <span className="text-l">
+            <span className="text-l sm:text-2xl sm:font-extralight">
               Atywnych <br /> Użytkowników
             </span>
           </div>
           <div className="flex flex-col min-w-32">
             <span className="font-bold text-purple text-4xl">+900</span>
-            <span className="text-l">
+            <span className="text-l sm:text-2xl sm:font-extralight">
               Zapytań <br /> Dziennie
             </span>
           </div>
           <div className="flex flex-col min-w-32">
             <span className="font-bold text-purple text-4xl">+40</span>
-            <span className="text-l">
+            <span className="text-l sm:text-2xl sm:font-extralight">
               Pozytywnych <br /> Opinii
             </span>
           </div>
@@ -49,13 +49,13 @@ function Home() {
               height={40}
             />
           </div>
-          <h1 className="text-5xl leading-tight font-semibold">
+          <h1 className="text-5xl leading-tight font-semibold md:text-7xl">
             Poznaj nasze najnowsze rozwiązanie <span className="text-purple">AI</span>
           </h1>
         </div>
       </section>
 
-      <section className="flex justify-center items-center animate-bounce mt-14 h-auto">
+      <section className="flex justify-center items-center animate-bounce mt-14 h-auto sm:mt-20">
         <Image
           src={
             "https://res.cloudinary.com/dbbuav0rj/image/upload/v1727450427/AliceIcons/scroll_jjgqji.svg"
