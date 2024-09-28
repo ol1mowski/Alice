@@ -38,11 +38,14 @@ const config: Config = {
         menu: "fade .7s ease-in-out",
       },
       maxHeight: {
-        mainImage: '50rem',
+        mainImage: "45rem",
+      },
+      maxWidth: {
+        mainImage: "45rem",
       },
       padding: {
-        main: '5rem 120px'
-      }
+        main: "5rem 120px",
+      },
     },
   },
   plugins: [],
