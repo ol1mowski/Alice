@@ -1,4 +1,5 @@
-import CounterAnimation from "@/pages/UI/CounterAnimation";
+import CounterAnimation from "@/pages/UI/Counter.animation";
+import TypingAnimation from "@/pages/UI/Typing.animation";
 import Image from "next/image";
 
 function Home() {
@@ -22,16 +23,16 @@ function Home() {
           <div className="flex flex-col min-w-32">
             <span className="font-bold text-black text-4xl 2xl:text-5xl">
               +
-              <CounterAnimation duration={2000} target={300} />
+              <CounterAnimation duration={10000} target={300} />
             </span>
             <span className="text-l sm:text-2xl sm:font-extralight lg:text-xl">
               Atywnych <br /> Użytkowników
             </span>
           </div>
           <div className="flex flex-col min-w-32">
-             <span className="font-bold text-black text-4xl 2xl:text-5xl">
+            <span className="font-bold text-black text-4xl 2xl:text-5xl">
               +
-              <CounterAnimation duration={2000} target={900} />
+              <CounterAnimation duration={10000} target={900} />
             </span>
             <span className="text-l sm:text-2xl sm:font-extralight lg:text-xl">
               Zapytań <br /> Dziennie
@@ -40,7 +41,7 @@ function Home() {
           <div className="flex flex-col min-w-32">
             <span className="font-bold text-black text-4xl 2xl:text-5xl">
               +
-              <CounterAnimation duration={2000} target={40} />
+              <CounterAnimation duration={10000} target={40} />
             </span>
             <span className="text-l sm:text-2xl sm:font-extralight lg:text-xl">
               Pozytywnych <br /> Opinii
@@ -61,7 +62,7 @@ function Home() {
             />
           </div>
           <h1 className="text-5xl leading-tight font-semibold md:text-7xl lg:text-6xl 2xl:text-7xl">
-            Poznaj nasze najnowsze rozwiązanie{" "}
+            <TypingAnimation textValue="Poznaj nasze najnowsze rozwiązanie " />
             <span className="text-purple">AI</span>
           </h1>
         </div>
