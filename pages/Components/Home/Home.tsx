@@ -2,7 +2,10 @@ import Image from "next/image";
 
 function Home() {
   return (
-    <main className="flex flex-col h-screen p-5">
+    <main className="container flex flex-col h-screen p-5">
+        <div className="absolute shadow-custom-big bg-transparent top-1/3 right-32 bg-custom-gradient animate-menu">
+            
+        </div>
       <section className="hidden">
         <Image
           src={
@@ -13,8 +16,8 @@ function Home() {
           height={500}
         />
       </section>
-      <section className="h-full">
-        <div className="h-1/4 mt-40 flex justify-between">
+      <section className="h-3/4">
+        <div className="h-1/4 mt-32 flex justify-between">
           <div className="flex flex-col">
             <span className="font-bold text-purple text-4xl">+300</span>
             <span className="text-l">
@@ -52,7 +55,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="flex justify-center items-center animate-bounce mt-10 h-auto">
+      <section className="flex justify-center items-center animate-bounce mt-5 h-auto">
         <Image
           src={
             "https://res.cloudinary.com/dbbuav0rj/image/upload/v1727450427/AliceIcons/scroll_jjgqji.svg"

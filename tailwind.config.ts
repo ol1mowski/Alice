@@ -26,6 +26,14 @@ const config: Config = {
           "100%": { opacity: "1" },
         },
       },
+      backgroundImage: {
+        "custom-gradient":
+          "linear-gradient(90deg, rgba(97,68,243,0.3785889355742297) 100%, rgba(97,68,243,1) 100%)",
+      },
+      boxShadow: {
+        "custom-big":
+          "0 0 50px 20px rgba(97,68,243,0.1), 0 0 1000px 100px rgba(97,68,243,1)",
+      },
       animation: {
         menu: "fade .7s ease-in-out",
       },
