@@ -25,12 +25,30 @@ function Home() {
         <div>
           <div>
             <span>Sprawdź teraz</span>
-            <Image src={"https://res.cloudinary.com/dbbuav0rj/image/upload/v1727450427/AliceIcons/arrow_qdzrqv.svg"} alt="arrow icon" width={50} height={50} />
+            <Image
+              src={
+                "https://res.cloudinary.com/dbbuav0rj/image/upload/v1727450427/AliceIcons/arrow_qdzrqv.svg"
+              }
+              alt="arrow icon"
+              width={50}
+              height={50}
+            />
           </div>
           <h1>
             Poznaj nasze najnowsze rozwiązanie <span>AI</span>
           </h1>
         </div>
+      </section>
+
+      <section>
+          <Image
+              src={
+                "https://res.cloudinary.com/dbbuav0rj/image/upload/v1727450427/AliceIcons/scroll_jjgqji.svg"
+              }
+              alt="scroll icon"
+              width={50}
+              height={50}
+            />
       </section>
     </main>
   );
