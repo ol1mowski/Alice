@@ -1,3 +1,4 @@
+import CounterAnimation from "@/pages/UI/CounterAnimation";
 import Image from "next/image";
 
 function Home() {
@@ -19,24 +20,27 @@ function Home() {
       <section className="h-3/4 lg:flex lg:flex-col lg:w-1/3">
         <section className="h-full mt-32 flex justify-between max-w-xl m-auto lg:gap-5 lg:mt-64 2xl:mt-44 2xl:gap-10">
           <div className="flex flex-col min-w-32">
-            <span className="font-bold text-purple text-4xl 2xl:text-5xl">
-              +300
+            <span className="font-bold text-black text-4xl 2xl:text-5xl">
+              +
+              <CounterAnimation duration={2000} target={300} />
             </span>
             <span className="text-l sm:text-2xl sm:font-extralight lg:text-xl">
               Atywnych <br /> Użytkowników
             </span>
           </div>
           <div className="flex flex-col min-w-32">
-            <span className="font-bold text-purple text-4xl 2xl:text-5xl">
-              +900
+             <span className="font-bold text-black text-4xl 2xl:text-5xl">
+              +
+              <CounterAnimation duration={2000} target={900} />
             </span>
             <span className="text-l sm:text-2xl sm:font-extralight lg:text-xl">
               Zapytań <br /> Dziennie
             </span>
           </div>
           <div className="flex flex-col min-w-32">
-            <span className="font-bold text-purple text-4xl 2xl:text-5xl">
-              +40
+            <span className="font-bold text-black text-4xl 2xl:text-5xl">
+              +
+              <CounterAnimation duration={2000} target={40} />
             </span>
             <span className="text-l sm:text-2xl sm:font-extralight lg:text-xl">
               Pozytywnych <br /> Opinii
