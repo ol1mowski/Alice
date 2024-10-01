@@ -2,7 +2,8 @@
 
 Welcome to **Alice Virtual AI Therapist**, an innovative AI-powered mental health support platform designed to provide conversational therapy. This project demonstrates my ability to integrate artificial intelligence into web applications using modern technologies like Next.js and Tailwind CSS.
 
-![Alice Virtual AI](https://github.com/user-attachments/assets/alice-virtual-ai-preview)
+![alice](https://github.com/user-attachments/assets/482597db-5b8c-43a6-9175-590dbfbc8521)
+
 
 ## ✨ Overview
 
