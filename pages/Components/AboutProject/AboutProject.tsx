@@ -3,7 +3,7 @@ import React from "react";
 
 function AboutProject() {
   return (
-    <section className="w-full flex justify-center items-center p-5 mt-10 z-10 relative">
+    <section className="w-full mb-52 flex justify-center items-center p-5 m-auto mt-52 z-10 relative lg:w-3/4">
       <Image
         className="absolute top-0 left-0 z-0"
         src={
@@ -13,11 +13,11 @@ function AboutProject() {
         width={100}
         height={100}
       />
-      <p className="text-4xl font-code text-center relative z-10 mt-5">
+      <p className="text-4xl font-code text-center relative z-10 mt-5l eading-snug md:text-5xl md:leading-normal">
         Alice to projekt <span className="text-purple">Chatbota</span> służący
         do <span className="text-green">interakcji z użytkownikami</span> za
         pomocą technologii przetwarzania języka naturalnego. Alice przyśpieszy
-        twoją pracę o nawet <span className="text-5xl text-pink-400">100%</span>{" "}
+        twoją pracę o nawet <span className="text-5xl text-pink-400 md:text-6xl">100%</span>{" "}
         oraz pomoże zaoszczędzić Ci{" "}
         <span className="text-blue-300">kilka godzin dziennie</span>
       </p>
