@@ -1,3 +1,4 @@
+import AboutProject from "./Components/AboutProject/AboutProject";
 import Header from "./Components/Header/Header";
 import Home from "./Components/Home/Home";
 
@@ -6,6 +7,7 @@ function index() {
     <>
       <Header />
       <Home />
+      <AboutProject />
     </>
   );
 }

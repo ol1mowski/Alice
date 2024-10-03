@@ -14,11 +14,12 @@ const config: Config = {
         purple: "#6144F3",
         green: "#48FFB0",
         white: "#f8f8f8",
-        black: "#000000",
+        black: "#2e2d2e",
       },
       fontFamily: {
         header: "Montserrat",
         text: "Roboto",
+        code: "Fira Code",
       },
       keyframes: {
         fade: {

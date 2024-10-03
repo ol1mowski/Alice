@@ -15,7 +15,7 @@ function HomeInfoChart({
         +
         <CounterAnimation duration={7000} target={number} />
       </span>
-      <span className="text-l sm:text-2xl sm:font-extralight lg:text-xl">
+      <span className="text-l sm:font-extralight lg:text-s lg:font-normal">
         {stringFirst} <br /> {stringSecond}
       </span>
     </div>
