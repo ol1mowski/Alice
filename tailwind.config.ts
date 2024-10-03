@@ -14,7 +14,9 @@ const config: Config = {
         purple: "#6144F3",
         green: "#48FFB0",
         white: "#f8f8f8",
+        allWhite: '#fff',
         black: "#2e2d2e",
+        boxWhite: "#F2F3F5",
       },
       fontFamily: {
         header: "Montserrat",
