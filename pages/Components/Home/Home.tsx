@@ -14,33 +14,32 @@ function Home() {
 
   const [height, setHeight] = useState<number>(100);
 
-useEffect(() => {
-  document.body.style.overflow = "hidden";
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    const handleScroll = (e: WheelEvent) => {
+      setHeight((prevHeight) => {
+        if (e.deltaY > 0) {
+          if (prevHeight > 0) {
+            return Math.max(prevHeight - 5, 0);
+          }
+        } else if (e.deltaY < 0) {
+          return Math.min(prevHeight + 5, 100);
+        }
+        return prevHeight;
+      });
 
-  const handleScroll = (e: WheelEvent) => {
-    
-    setHeight((prevHeight) => {
-      if (e.deltaY > 0) {
-        return prevHeight - 5;
-      } else if (e.deltaY < 0) {
-        return prevHeight + 5;
+      if (about.current) {
+        about.current.style.top = `${height}vh`;
       }
-      return prevHeight;
-    });
+    };
 
-    if (about.current) {
-      about.current.style.top = `${height}vh`;
-    }
-  };
+    window.addEventListener("wheel", handleScroll);
 
-  window.addEventListener("wheel", handleScroll);
-
-  return () => {
-    window.removeEventListener("wheel", handleScroll);
-    document.body.style.overflow = "auto"; // Przywrócenie przewijania
-  };
-}, [height]);
-
+    return () => {
+      window.removeEventListener("wheel", handleScroll);
+      document.body.style.overflow = "auto";
+    };
+  }, [height]);
 
   return (
     <>
