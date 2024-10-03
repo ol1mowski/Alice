@@ -1,6 +1,7 @@
 import AboutProject from "./Components/AboutProject/AboutProject";
 import Header from "./Components/Header/Header";
 import Home from "./Components/Home/Home";
+import KeyFeature from "./Components/KeyFeature/KeyFeature";
 
 function index() {
 
@@ -9,6 +10,7 @@ function index() {
       <Header />
       <Home />
       <AboutProject />
+      <KeyFeature />
     </>
   );
 }
