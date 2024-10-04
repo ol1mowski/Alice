@@ -29,6 +29,9 @@ const config: Config = {
           "100%": { opacity: "1" },
         },
       },
+      lineHeight: {
+        aboutHeight: "5rem",
+      },
       backgroundImage: {
         "custom-gradient":
           "linear-gradient(90deg, rgba(97,68,243,0.3785889355742297) 100%, rgba(97,68,243,1) 100%)",
