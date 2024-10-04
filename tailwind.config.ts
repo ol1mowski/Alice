@@ -14,9 +14,9 @@ const config: Config = {
         purple: "#6144F3",
         green: "#48FFB0",
         white: "#f8f8f8",
-        allWhite: '#fff',
+        allWhite: "#fff",
         black: "#2e2d2e",
-        boxWhite: "#F2F3F5",
+        boxWhite: "#F9F9F9",
       },
       fontFamily: {
         header: "Montserrat",
@@ -32,6 +32,7 @@ const config: Config = {
       lineHeight: {
         aboutHeight: "5rem",
       },
+
       backgroundImage: {
         "custom-gradient":
           "linear-gradient(90deg, rgba(97,68,243,0.3785889355742297) 100%, rgba(97,68,243,1) 100%)",
@@ -39,6 +40,7 @@ const config: Config = {
       boxShadow: {
         "custom-big":
           "0 0 50px 20px rgba(97,68,243,0.1), 0 0 1000px 100px rgba(97,68,243,1)",
+        featureShadow: "0px 0px 5px 0px rgba(97, 68, 243, 0.8)",
       },
       animation: {
         menu: "fade .7s ease-in-out",
